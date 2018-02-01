@@ -7,8 +7,9 @@ attr_accessor :backers, :title
 		@backers = []
 	end
 
-def add_backer(name)
-  self.backers << name
+def add_backer(backer)
+  self.backers << backer
+  backer.backed_projects << self
 end
 
 end
